@@ -8,16 +8,18 @@ public class Movement : MonoBehaviour
     public float forwardSpeed;
     public float leftRightSpeed;
 
+    public float jumpHeight;
+
     [Header("Internal")]
     public Rigidbody rb;
 
+    [Header("Ground check")]
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
 
-    float leftOrRight;
-
-    private void Start()
-    {
-
-    }
+    float leftOrRightKeyPressed;
+    bool isGrounded;
 
 
     void FixedUpdate()
@@ -27,21 +29,60 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        Jump();
-        leftOrRight = Input.GetAxis("Horizontal");
+        JumpIfSpacePressed();
+        CheckForHorizontalAxis();
+        CheckIfGrounded();
     }
+
+    private void JumpIfSpacePressed()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
+    }
+    private void CheckForHorizontalAxis()
+    {
+        leftOrRightKeyPressed = Input.GetAxis("Horizontal");
+    }
+
+    private void CheckIfGrounded()
+    {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    }
+
+    #region Move
 
     void Move()
     {
-        var offset = new Vector3(forwardSpeed * Time.fixedDeltaTime, 0, -leftOrRight * leftRightSpeed * Time.fixedDeltaTime);
+        var offset = new Vector3(CalcXOffset(), 0, CalcZOffset());
         rb.MovePosition(transform.position + offset);
     }
 
+    private float CalcZOffset()
+    {
+        return -leftOrRightKeyPressed * leftRightSpeed * Time.fixedDeltaTime;
+    }
+
+    float CalcXOffset()
+    {
+        return forwardSpeed * Time.fixedDeltaTime;
+    }
+
+    #endregion
+
+
+    #region Jump
+
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.velocity = new Vector3(0, Mathf.Sqrt(2 * 2f * 9.81f), 0);
-        }
+        rb.velocity = new Vector3(0, CalcSpeedForJump(), 0);
     }
+
+    float CalcSpeedForJump()
+    {
+        return Mathf.Sqrt(jumpHeight * 2f * -Physics.gravity.y);
+    }
+
+    #endregion
 }
