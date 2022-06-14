@@ -55,6 +55,8 @@ public class Movement : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
 
+    
+
     #region Move
 
     void Move()
