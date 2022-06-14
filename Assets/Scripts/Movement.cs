@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class Movement : MonoBehaviour
 {
+    public UnityEvent OnJump;
+
     public float forwardSpeed;
     public float leftRightSpeed;
 
@@ -21,6 +24,7 @@ public class Movement : MonoBehaviour
     float leftOrRightKeyPressed;
     bool isGrounded;
 
+    public bool IsGrounded => isGrounded;
 
     void FixedUpdate()
     {
@@ -77,6 +81,7 @@ public class Movement : MonoBehaviour
     void Jump()
     {
         rb.velocity = new Vector3(0, CalcSpeedForJump(), 0);
+        OnJump?.Invoke();
     }
 
     float CalcSpeedForJump()
