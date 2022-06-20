@@ -3,7 +3,17 @@ guid: 488b3730c8c4a5342b9d05a4f0bb13fb
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pachira_aquatica_01_bark
+    second: {fileID: 2100000, guid: a6d4b51e1ee698140b399924f2cc0fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pachira_aquatica_01_leaves
+    second: {fileID: 2100000, guid: 970618e4fb32afd449f2dfdf24bb82fd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
