@@ -136,7 +136,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "VertexColorPalette.previousColorPalette",
-                "value": "{\"m_Value\":\"Assets\\\\Old\\\\ProBuilder DataDefault Color Palette.asset\"}"
+                "value": "{\"m_Value\":\"Assets\\\\Models\\\\ProBuilder DataDefault Color Palette.asset\"}"
             },
             {
                 "type": "UnityEngine.ProBuilder.SemVer, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -221,7 +221,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
-                "value": "{\"m_Value\":{\"x\":-6.863213539123535,\"y\":0.4707123935222626,\"z\":0.9504976272583008}}"
+                "value": "{\"m_Value\":{\"x\":-1.5641250610351563,\"y\":1.0767416954040528,\"z\":-1.5732951164245606}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",

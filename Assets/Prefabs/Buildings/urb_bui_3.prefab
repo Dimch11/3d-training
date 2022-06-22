@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 444134}
   - component: {fileID: 3325462}
   - component: {fileID: 2302144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: urb_bui_3_lod2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 412438}
   - component: {fileID: 3327786}
   - component: {fileID: 2321074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: urb_bui_3_lod1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2367744}
   - component: {fileID: 20589114}
   - component: {fileID: 2534287638782389910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: urb_bui_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
