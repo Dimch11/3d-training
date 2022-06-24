@@ -190,6 +190,10 @@ MonoBehaviour:
   jumpColliderHeight: 1.043871
   groundCheckPos: {x: 0, y: -1, z: 0}
   jumpGroundCheckPos: {x: 0, y: -1, z: 0}
+  ripColliderPos: {x: 0.01761979, y: 0.03979611, z: 0}
+  ripColliderHeight: 1.272739
+  jumpRipColliderPos: {x: 0.01761979, y: 0.2824288, z: 0}
+  jumpRipColliderHeight: 0.787474
 --- !u!1101 &7122469374135569990
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

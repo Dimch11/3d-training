@@ -15,6 +15,7 @@ public class Jump : StateMachineBehaviour
     public Vector3 jumpGroundCheckPos = new(0, -0.34f, 0);
 
     Movement movement;
+    CapsuleCollider ripCollider;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -23,6 +24,7 @@ public class Jump : StateMachineBehaviour
         if (movement == null)
         {
             movement = animator.GetComponentInParent<Movement>();
+            ripCollider = movement.GetComponentInChildren<RipCollider>().GetComponent<CapsuleCollider>();
         }
 
         var collider = movement.GetComponent<CapsuleCollider>();

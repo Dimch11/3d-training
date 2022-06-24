@@ -7,6 +7,7 @@ public class Ragdoll : MonoBehaviour
 {
     public List<Collider> colliders;
     List<Rigidbody> rigidbodies;
+    List<ContactPoint> contactPoints = new List<ContactPoint>();
 
     void Start()
     {
