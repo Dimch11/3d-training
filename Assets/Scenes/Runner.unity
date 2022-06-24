@@ -462,7 +462,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &19443088
 Mesh:
@@ -3831,7 +3831,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 119.464005, y: 311.69098, z: 282.301}
 --- !u!114 &141669006
 MonoBehaviour:
@@ -30244,7 +30244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712528012}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1316193007
 CapsuleCollider:
@@ -31007,7 +31007,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1366677906
 PrefabInstance:
@@ -33748,7 +33748,7 @@ Transform:
   - {fileID: 905250950}
   - {fileID: 1685096504}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1587968018
 Mesh:
@@ -35056,7 +35056,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712528012}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1632245475
 PrefabInstance:
@@ -37389,11 +37389,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 219306114}
-  - {fileID: 2018670408}
   - {fileID: 1629701381}
   - {fileID: 1316193006}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1712528013
 MonoBehaviour:
@@ -37484,7 +37483,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1721154713
 PrefabInstance:
@@ -41422,7 +41421,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1830492266
 Mesh:
@@ -45508,7 +45507,7 @@ GameObject:
   - component: {fileID: 2018670408}
   - component: {fileID: 2018670409}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45522,12 +45521,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018670407}
   m_LocalRotation: {x: 0.16245984, y: 0.68819094, z: -0.16245985, w: 0.68819106}
-  m_LocalPosition: {x: -5, y: 2.5, z: 0}
+  m_LocalPosition: {x: -14, y: 3.5, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1335532663}
-  m_Father: {fileID: 1712528012}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 100, z: 0}
 --- !u!114 &2018670409
