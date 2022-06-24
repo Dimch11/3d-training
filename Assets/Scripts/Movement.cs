@@ -17,8 +17,9 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
 
     [Header("Ground check")]
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public Transform groundCheckFrom;
+    public Transform groundCheckTo;
+    public float groundCheckRadius;
     public LayerMask groundMask;
 
     float leftOrRightKeyPressed;
@@ -52,7 +53,7 @@ public class Movement : MonoBehaviour
 
     private void CheckIfGrounded()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckCapsule(groundCheckFrom.position, groundCheckTo.position, groundCheckRadius, groundMask);
     }
 
     
