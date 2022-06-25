@@ -7,7 +7,6 @@ public class Ragdoll : MonoBehaviour
 {
     public List<Collider> colliders;
     List<Rigidbody> rigidbodies;
-    List<ContactPoint> contactPoints = new List<ContactPoint>();
 
     void Start()
     {
@@ -15,14 +14,6 @@ public class Ragdoll : MonoBehaviour
 
         TurnOffRagdollColliders();
         TurnOffRagdollRBs();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            DoRagdoll();
-        }
     }
 
     public void DoRagdoll()
